@@ -22,7 +22,7 @@ input("ENTER when ready")
 
 try:
 
-def checkvalidity():
+def token():
     src = requests.get('https://discordapp.com/api/v6/auth/login', headers={'Authorization': usertoken})
     if src.status_code == 200:
         r = requests.get('https://discord.com/api/v9/users/@me', headers=getheaders(usertoken)).json()
